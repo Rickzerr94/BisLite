@@ -60,14 +60,47 @@ ul{
         &:first-child{
           margin-left: 0;
         }
+        &:nth-child(3){
+          margin-left: 39px;
+        }
         a{
           font-family: Arial, sans-serif;
           font-weight: 700;
           font-size: 13px;
           line-height: 20px;
           text-transform: uppercase;
+          padding-top: 11px;
+          padding-bottom: 13px;
         }
       }
     }
+  }
+}
+.header__drop-down{
+  position: relative;
+  > a{
+    position: relative;
+    border-top: 5px solid transparent;
+    padding-left: 11px;
+    padding-right: 26px;
+    transition: all 0.3s;
+    &:after{
+      content: "";
+      position: absolute;
+      background-image: url("../img/angle-down-solid.svg");
+      background-size: cover;
+      height: 12px;
+      width: 14px;
+      right: 5px;
+    }
+    &:hover{
+      color: #2aacc8;
+      border-top: 5px solid #2aacc8;
+      background-color: white;
+
+    }
+  }
+  .drop-down__list {
+    position: absolute;
   }
 }

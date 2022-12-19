@@ -64,12 +64,45 @@ ul li {
 .header .header__inner .header__menu li:first-child {
   margin-left: 0;
 }
+.header .header__inner .header__menu li:nth-child(3) {
+  margin-left: 39px;
+}
 .header .header__inner .header__menu li a {
   font-family: Arial, sans-serif;
   font-weight: 700;
   font-size: 13px;
   line-height: 20px;
   text-transform: uppercase;
+  padding-top: 11px;
+  padding-bottom: 13px;
+}
+
+.header__drop-down {
+  position: relative;
+}
+.header__drop-down > a {
+  position: relative;
+  border-top: 5px solid transparent;
+  padding-left: 11px;
+  padding-right: 26px;
+  transition: all 0.3s;
+}
+.header__drop-down > a:after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/angle-down-solid.svg");
+  background-size: cover;
+  height: 12px;
+  width: 14px;
+  right: 5px;
+}
+.header__drop-down > a:hover {
+  color: #2aacc8;
+  border-top: 5px solid #2aacc8;
+  background-color: white;
+}
+.header__drop-down .drop-down__list {
+  position: absolute;
 }
 
 /*# sourceMappingURL=main.css.map */
