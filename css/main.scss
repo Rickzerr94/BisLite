@@ -5,6 +5,7 @@ html{
 }
 body{
   font-family: Lato, sans-serif;
+  line-height: 20px;
 }
 *{
   padding: 0;
@@ -58,6 +59,7 @@ ul{
     }
   }
   .drop-down__list {
+    z-index: 100;
     display: none;
     position: absolute;
     width: 202px;
@@ -154,7 +156,7 @@ ul{
           font-family: Arial, sans-serif;
           font-weight: 700;
           font-size: 13px;
-          line-height: 20px;
+          //line-height: 20px;
           text-transform: uppercase;
           padding-top: 11px;
           padding-bottom: 13px;
@@ -180,11 +182,12 @@ ul{
         color: #fff;
         width: 300px;
         font-weight: 700;
+        line-height: 60px;
       }
     }
   }
 }
-//#626262
+
 .slick-dots{
   li{
     margin: 0 9px;
@@ -206,4 +209,63 @@ ul{
       background-color: #ffffff;
     }
   }
+}
+//items
+.items{
+  background-color: #e8ebf1;
+  padding: 60px 0 60px;
+  border: 1px solid #d9d9d9;
+  .items__inner{
+    display: flex;
+    justify-content: space-between;
+    .item{
+      width: 225px;
+      font-family: Arial sans-serif;
+      .item__title{
+        padding: 10px 0 0 60px;
+        position: relative;
+        .item__icons{
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          background-color: #2aacc8;
+          border-radius: 50%;
+          top: 0;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        h4{
+          font-size: 15px;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-bottom: 30px;
+        }
+      }
+      .item__text{
+        font-size: 13px;
+        color: #363636;
+        margin-bottom: 25px;
+      }
+      .item__link{
+        color: #2aacc8;
+        margin-left: 15px;
+        font-size: 13px;
+        position: relative;
+        &:before{
+          content: '';
+          position: absolute;
+          background-image: url("../img/arrow.svg");
+          width: 5px;
+          height: 7px;
+          left: -15px;
+          top: 5px;
+        }
+      }
+    }
+  }
+}
+.plane-icon{
+  margin-left: 6px;
 }
