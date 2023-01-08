@@ -272,5 +272,14 @@ ul li {
   border-top: 1px solid #dfe1e5;
   border-bottom: 1px solid #dfe1e5;
 }
+.works__inner .slick-arrow {
+  width: 20px;
+  height: 20px;
+  background-color: #81e4ed;
+  border-radius: 50%;
+}
+.works__inner .slick-arrow:before {
+  display: none;
+}
 
 /*# sourceMappingURL=main.css.map */
