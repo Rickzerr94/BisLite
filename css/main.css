@@ -250,14 +250,18 @@ ul li {
   margin-left: 6px;
 }
 
-.works__title {
+.works__title,
+.testimonials__title,
+.clients__logo-title {
   padding: 25px 0 15px 40px;
   font-family: Arial sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
 }
-.works__title:before {
+.works__title:before,
+.testimonials__title:before,
+.clients__logo-title:before {
   content: "";
   position: absolute;
   background-image: url("../img/cursor.svg");
@@ -280,6 +284,85 @@ ul li {
 }
 .works__inner .slick-arrow:before {
   display: none;
+}
+
+.slick-prev {
+  left: auto;
+  top: -27px;
+  right: 31px;
+}
+
+.slick-next {
+  top: -27px;
+  right: 0;
+}
+
+.slick-list {
+  margin: 0 -15px;
+}
+
+.works__inner-item {
+  text-align: center;
+}
+
+.works__inner-box {
+  display: inline-block;
+  position: relative;
+}
+.works__inner-box:hover .works__inner-link {
+  height: 80px;
+}
+.works__inner-box .works__inner-link {
+  background-color: #2aacc8;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.15s ease-in-out;
+}
+.works__inner-box .works__inner-link a {
+  margin: 0 15px;
+}
+
+.clients {
+  padding: 0 0 40px;
+  font-family: Arial, sans-serif;
+}
+.clients .clients__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.clients .clients__inner .testimonials {
+  max-width: 440px;
+}
+.clients .clients__inner .testimonials .testimonials__title:before {
+  background-image: url("../img/comments-icon.svg");
+  background-size: cover;
+  width: 26px;
+  height: 23px;
+  fill: #2aacc8;
+}
+.clients .clients__inner .testimonials p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #363636;
+}
+.clients .clients__inner .testimonials span {
+  display: block;
+  padding-top: 30px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.clients__logo-title:before {
+  background-image: url("../img/client-7.svg");
+  background-size: cover;
+  width: 24px;
+  height: 22px;
 }
 
 /*# sourceMappingURL=main.css.map */
