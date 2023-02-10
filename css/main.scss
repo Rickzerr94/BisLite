@@ -381,3 +381,38 @@ ul{
     height: 22px;
   }
 }
+.downloads{
+  margin-top: 40px;
+  padding: 30px 40px 30px 40px;
+  border: 1px solid #81e4ed;
+  background-color: #e8fcfe;
+  display: flex;
+  justify-content: space-between;
+  .download__text{
+    max-width: 620px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #363636;
+  }
+  .download__btn{
+    a{
+      font-weight: 700;
+      padding: 20px 20px 20px 70px;
+      position: relative;
+      border: 1px solid #2aacc8;
+      border-radius: 8px;
+      box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2),inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
+      background-image: linear-gradient(to top, rgb(42,172,200) 0%, rgb(96,206,222) 15%, rgb(114,218,230) 50%, rgb(129,228,237) 100%);
+      &:before{
+        content: '';
+        position: absolute;
+        background-image: url("../img/download-button-svgrepo-com.svg");
+        width: 25px;
+        height: 25px;
+        background-size: cover;
+        left: 25px;
+        top: 17px;
+      }
+    }
+  }
+}
