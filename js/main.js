@@ -22,8 +22,8 @@ $(function(){
                 },
             }
         ],
-        prevArrow: '<button type="button" class="slick-prev"><img src="img/slide-left.svg" alt="left"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="img/slide-right.svg" alt="right"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="/img/slide-left.svg" alt="left"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="/img/slide-right.svg" alt="right"></button>',
     });
     $('.menu__btn').on('click', function (){
        $('.header__menu-list').toggleClass('header__menu-active');
